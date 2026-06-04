@@ -1,8 +1,50 @@
 # 🍦 Jumys Ice Cream Web App 🍨
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react" alt="React 19" />
+  <img src="https://img.shields.io/badge/CSS3-Vanilla-ff69b4?style=for-the-badge&logo=css3" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite" alt="Vite 8" />
+  <img src="https://img.shields.io/badge/Build-Passing-2eb82e?style=for-the-badge&logo=github-actions" alt="Build Status" />
+  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" alt="License MIT" />
+</p>
+
+```
+    .-""-.
+   /      \
+  |  🌟    |    JUMYS PREMIUM ICE CREAM
+   \      /     "Crafted with Code, Served with Love"
+    `-..-`
+     \  /
+      \/
+```
+
 Welcome to the **Jumys Ice Cream** web application – a premium, state-of-the-art e-commerce storefront featuring interactive sandboxes, visual design layout engines, and dynamic visual themes.
 
 Designed with **wow-factor aesthetics**, fluid micro-animations, glassmorphism elements, and fully responsive media layouts, this storefront offers a premium, high-fidelity mock-up experience matching high-end Shopify and custom headless e-commerce store qualities.
+
+---
+
+## 🎨 System Architecture Flow
+
+Here is how the dynamic style and theme switching engine propagates selections from the Navbar down to render templates on the page:
+
+```mermaid
+graph TD
+  A["Navbar Dropdown Selection"] -->|Updates State| B["CartContext State Provider"]
+  B -->|Exposes homeStyle| C["App.jsx Toggler"]
+  B -->|Exposes layoutStyle & cardStyle| D["ProductsSection.jsx Layouts"]
+  
+  C -->|Toggles Document Body Class| E["body.theme-dark / body.theme-pastel / body.theme-warm"]
+  E -->|Overrides Root CSS Variables| F["Dynamic Theme (Colors & Accents)"]
+  
+  D -->|Applies Card Classes & Conditional Views| G["Showcase Gallery / Grouped Bundle / Filter Sidebar / Snapping Slider / Grids"]
+  G -->|Renders UI Templates| H["Wow-Factor E-Commerce Views"]
+  
+  style A fill:#E31E24,stroke:#333,stroke-width:2px,color:#fff
+  style B fill:#2ABFBF,stroke:#333,stroke-width:2px,color:#fff
+  style F fill:#F06A3A,stroke:#333,stroke-width:2px,color:#fff
+  style H fill:#2eb82e,stroke:#333,stroke-width:2px,color:#fff
+```
 
 ---
 
@@ -39,20 +81,14 @@ Click layout configurations under the **Product** navigation dropdown to instant
 - **Grouped Bundle Layout**: Combined bundle packages containing multiple signature flavors with single-click additions and combined price savings.
 - **Tab & Info Structures**: Information details styled as horizontal tab headers, collapsible accordion drawers, and full-width specs sheets.
 
-### 4. 📱 Full Viewport Responsiveness
-Optimized with tailored CSS media queries for desktop, laptop, tablet, and mobile screens:
-- Dropdown menus adjust inline without overflowing next column contents.
-- Filter panels and sidebars collapse clean on narrow screens.
-- Gallery thumbnails slide underneath product images on mobile formats automatically.
-- Tab selectors support smooth scroll snapping layouts.
-
 ---
 
-## 🛠️ Tech Stack
+## 🍦 Under The Hood: The Secret Recipe
 
-- **Core**: React 19 (Hooks, Context Provider)
-- **Styling**: Vanilla CSS (CSS variables, Custom animation frames, media queries)
-- **Build Tool**: Vite 8
+To guarantee the layout matches professional themes:
+- **Flexbox Spacing Fix**: Badges (`NEW`/`HOT`) are positioned inline using `flexbox` layout with an `8px` gap, rather than absolute coordinate shifts, ensuring perfect vertical alignment without overlapping text on wrap.
+- **Pure CSS Transitions**: Interactive cards use high-end cubic-bezier curves (`cubic-bezier(0.2, 0.8, 0.2, 1)`) for premium image scaling and slide-up animations.
+- **CSS Variables Mapping**: The custom styling system switches colors smoothly by redefining layout variables on `.theme-dark`, `.theme-pastel`, and `.theme-warm`.
 
 ---
 
@@ -79,7 +115,27 @@ To build and bundle the project for production distribution:
    ```bash
    npm run build
    ```
-   To preview the built production site locally:
-   ```bash
-   npm run preview
-   ```
+
+---
+
+## 🤝 Connect & Socials
+
+Let's build something delicious together! Check out my developer channels below:
+
+<p align="left">
+  <a href="https://github.com" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="mailto:contact@jumyicecream.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+</p>
