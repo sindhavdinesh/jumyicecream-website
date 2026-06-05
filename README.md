@@ -123,19 +123,19 @@ To build and bundle the project for production distribution:
 Let's build something delicious together! Check out my developer channels below:
 
 <p align="left">
-  <a href="https://github.com" target="_blank">
+  <a href="https://github.com/sindhavdinesh" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="https://linkedin.com" target="_blank">
+  <a href="https://www.linkedin.com/in/dinesh-sindhav-2081b8396/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfFKs%2B%2BVTSleJpFX766CuzA%3D%3D" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com" target="_blank">
+  <a href="https://x.com/Sind35407Dinesh" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://instagram.com" target="_blank">
+  <a href="https://www.instagram.com/mr_coder_dinesh?igsh=MXFjc2R6MDd6NWxlNQ==" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  <a href="mailto:contact@jumyicecream.com">
+  <a href="mailto:sindhavdinesh82@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
 </p>
