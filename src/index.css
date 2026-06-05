@@ -420,7 +420,7 @@ button {
   transition: opacity 0.7s ease;
 }
 
-.hero-bg-img.active { opacity: 1; }
+.hero-bg-slide.active .hero-bg-img { opacity: 1; }
 
 /* Cream gradient overlay left side for text */
 .hero-overlay {
@@ -684,7 +684,7 @@ button {
     background-position: center bottom 10% !important;
     opacity: 0 !important;
   }
-  .hero-bg-img.active {
+  .hero-bg-slide.active .hero-bg-img {
     opacity: 0.15 !important;
   }
 }
