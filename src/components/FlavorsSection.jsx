@@ -41,11 +41,7 @@ const FlavorsSection = () => {
   return (
     <section className="flavors-section" id="flavors" aria-label="Ice cream flavors">
       <div className="container">
-        <div className="section-header">
-          <p className="section-tag">🌿 Our Signature Flavors</p>
-          <h2>Choose Your Flavor</h2>
-          <p>Each flavor crafted with care, using the freshest natural ingredients from around the world.</p>
-        </div>
+
 
         <div className="flavors-grid">
           {flavors.map((flavor) => (

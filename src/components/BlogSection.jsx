@@ -21,22 +21,16 @@ const BlogSection = () => {
               <div className="blog-content">
                 <div className="blog-meta">
                   <span className="blog-category">{post.category}</span>
+                  <span className="blog-meta-dot">•</span>
                   <span className="blog-date">{post.date}</span>
                 </div>
                 <h3 className="blog-title">{post.title}</h3>
-                <p className="blog-excerpt">{post.excerpt}</p>
-                <a href="#" className="read-more-link" style={{ marginTop: '14px', fontSize: '11px' }}>
-                  Read More
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                  </svg>
-                </a>
               </div>
             </article>
           ))}
         </div>
         <div className="blog-cta">
-          <button className="btn-primary" id="blog-read-more-btn">View All Posts</button>
+          <button className="btn-primary" id="blog-read-more-btn">Read More</button>
         </div>
       </div>
     </section>
@@ -44,3 +38,4 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
+

@@ -510,34 +510,11 @@ const ProductsSection = () => {
     <section className="ps-section" id="products" aria-label="Featured products">
       <div className="container">
         
-        {/* Style Sandbox Switcher */}
-        <div className="pc-sandbox">
-          <div className="pc-sandbox-header">
-            <span className="ps-subtitle" style={{marginBottom: '4px'}}>Interactive Sandbox</span>
-            <h2 className="ps-title" style={{fontSize: '22px', marginBottom: '8px'}}>Explore Layout & Hover Styles</h2>
-            <p className="ps-desc" style={{fontSize: '13px', marginBottom: '24px'}}>
-              Active Layout: <strong style={{color: 'var(--primary)', textTransform: 'uppercase'}}>{layoutStyle.replace('-', ' ')}</strong> | Active Card Style: <strong style={{color: 'var(--primary)', textTransform: 'uppercase'}}>{cardStyle.replace('-', ' ')}</strong>
-            </p>
-          </div>
-          
-          <div className="pc-style-switcher">
-            {stylesOptions.map(opt => (
-              <button 
-                key={opt.id} 
-                className={`pc-style-btn ${cardStyle === opt.id ? 'active' : ''}`}
-                onClick={() => setCardStyle(opt.id)}
-              >
-                {opt.label}
-              </button>
-            ))}
-            <button 
-              className="pc-style-btn" 
-              style={{background: 'var(--dark)', color: '#fff'}}
-              onClick={() => setLayoutStyle('grid-5-col')}
-            >
-              Reset Layout
-            </button>
-          </div>
+        {/* Title Header */}
+        <div className="section-header">
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '32px', fontWeight: '800', textAlign: 'center', margin: '0 0 40px 0' }}>
+            Best Ice Cream Shops
+          </h2>
         </div>
 
         {/* Layout Render Strategy */}

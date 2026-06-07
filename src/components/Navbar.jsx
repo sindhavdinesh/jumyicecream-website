@@ -523,7 +523,7 @@ const WishlistPage = ({ open, onClose, items = [] }) => {
             <span className="logo-text">JUMYS</span>
             <span className="logo-sub">Ice Cream</span>
           </div>
-          <nav style={{ display: 'flex', gap: '24px', fontSize: '14px' }}>
+          <nav className="wishlist-nav" style={{ display: 'flex', gap: '24px', fontSize: '14px' }}>
             {['Home', 'Shop', 'Product', 'Blog', 'Featured'].map(n => (
               <a key={n} href="#" className="nav-link" onClick={onClose}>{n}</a>
             ))}
